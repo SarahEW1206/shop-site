@@ -1,19 +1,56 @@
-body {
-  background: url("background.svg");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.icon {
+  fill: #333;
+  width: 20px;
+  height: 20px;
+  padding-right: .5em;
+}
+
+.logobar {
+  display: block;
+  background-color: white;
+  max-width: 67em;
+  height: 100px;
+  margin: .3em auto;
+  border-radius: 1em 1em 0 0;
+}
+
+.logo {
+  height: 75px;
+  width: 118px;
+  margin: 1em 0 .5em 1em;
+  float: left;
 }
 
 .wrapper {
   max-width: 67em;
-  margin: 1em auto;
+  margin: .3em auto;
   position: relative;
   background-color: white;
 }
 
 .icon {
-  fill: #fff;
+  fill: #6d5a75;
   width: 20px;
   height: 20px;
   padding-right: .5em;
+}
+
+.slider {
+  height: 300px;
+  max-width: 67em;
+  background-color: #333;
+}
+
+body {
+  background: url("/img/background.svg");
+  font-family: 'Open Sans', sans-serif;
+  font-size: .8em;
 }
 
 header {
@@ -21,7 +58,7 @@ header {
 }
 
 nav {
-  margin: 0 auto;
+  margin: 0 auto 0;
   max-width: 67em;
 }
 
@@ -43,8 +80,8 @@ li {
   flex-grow: 1;
   padding: .25em;
   margin: .05em;
-  background: blue;
-  border-radius: .25em;
+  background-color: rgba(56, 183, 183, 0.9);
+  border-radius: 0;
   width: 6em;
 }
 
@@ -55,13 +92,19 @@ a {
   flex-grow: 1;
   text-decoration: none;
   color: white;
-  font-family: helvetica, sans-serif;
+  font-family: 'Poiret One', cursive;
   font-weight: lighter;
   font-size: .75em;
 }
 
 h1 {
   margin: 0;
+  font-family: 'Poiret One', cursive;
+  padding-left: .25em;
+}
+
+p {
+  padding-left: .5em;
 }
 
 /*# sourceMappingURL=styles.css.map */
