@@ -42,14 +42,13 @@
 
 .slider {
 	height: 300px;
-	max-width: $width;
+	max-width: 100%;
 	background-color: #333;
 }
 
 html {
   overflow: hidden;
   height: 100%;
-  font-size: 100%;
   font-family: 'Open Sans', sans-serif;
 }
 
@@ -84,13 +83,12 @@ li {
 	display: flex;
 	flex-wrap: wrap;
 	align-items: center;
-	justify-content: space between;
 	flex-grow: 1;
 	padding: .4em;
 	/*margin: .05em*/;
 	background-color: rgba(56, 183, 183, .9);
 	border-radius: 0;
-	width: 8em;
+	width: 6em;
 }
 
 @media (min-width: 411px) {
@@ -115,12 +113,12 @@ a {
 	color: white;
 	font-family: 'Poiret One', cursive;
 	font-weight: lighter;
-	font-size: .9em;
+	font-size: .8em;
 	letter-spacing: 3px;
 }
 
 h1 {
-	margin: 0;
+	margin: 1em 0;
 	font-family: 'Poiret One', cursive;
 	padding-left: .25em;
 }

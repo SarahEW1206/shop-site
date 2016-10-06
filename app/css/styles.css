@@ -14,7 +14,7 @@
 .logobar {
   display: block;
   background-color: rgba(255, 255, 255, 0.9);
-  max-width: 1200px;
+  max-width: 90%;
   height: 125px;
   margin: 0em auto;
   border-radius: 1em 1em 0 0;
@@ -28,7 +28,7 @@
 }
 
 .wrapper {
-  max-width: 1200px;
+  max-width: 90%;
   margin: 0 auto;
   position: relative;
   background-color: white;
@@ -43,14 +43,21 @@
 
 .slider {
   height: 300px;
-  max-width: 1200px;
+  max-width: 100%;
   background-color: #333;
 }
 
+html {
+  overflow: hidden;
+  height: 100%;
+  font-family: 'Open Sans', sans-serif;
+}
+
 body {
+  height: 100%;
+  overflow: auto;
   background: url("/img/background.svg");
   background-attachment: fixed;
-  font-family: 'Open Sans', sans-serif;
 }
 
 header {
@@ -59,7 +66,7 @@ header {
 
 nav {
   margin: 0 auto;
-  max-width: 1200px;
+  max-width: 90%;
 }
 
 ul {
@@ -77,13 +84,12 @@ li {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  justify-content: space between;
   flex-grow: 1;
   padding: .4em;
   /*margin: .05em*/
   background-color: rgba(56, 183, 183, 0.9);
   border-radius: 0;
-  width: 8em;
+  width: 6em;
 }
 
 @media (min-width: 411px) {
@@ -108,12 +114,12 @@ a {
   color: white;
   font-family: 'Poiret One', cursive;
   font-weight: lighter;
-  font-size: .9em;
+  font-size: .8em;
   letter-spacing: 3px;
 }
 
 h1 {
-  margin: 0;
+  margin: 1em 0;
   font-family: 'Poiret One', cursive;
   padding-left: .25em;
 }
