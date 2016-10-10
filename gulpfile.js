@@ -14,7 +14,7 @@ var sassOptions = {
 var sassSources = './scss/**/*.scss';
 var sassOutput = './app/css';
 var htmlSource = 'app/**/*.html';
-var jsSource = 'app/**/*js';
+var jsSource = 'app/js/*.js';
 
 gulp.task('sass', function(){
 	return gulp.src(sassSources)
@@ -33,6 +33,7 @@ gulp.task('serve', ['sass'], function(){
 
 	gulp.watch(sassSources, ['sass']);
 	gulp.watch(htmlSource).on('change', browserSync.reload);
+	gulp.watch(jsSource).on('change', browserSync.reload);
 });
 
 
