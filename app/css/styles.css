@@ -134,8 +134,8 @@
   margin-right: 1em;
 }
 
-#featuredProductNav li a:visited {
-  color: #6d5a75;
+#featuredProductNav li a:active {
+  color: #ffffff;
   background-color: none;
 }
 
