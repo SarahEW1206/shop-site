@@ -32,7 +32,7 @@ gulp.task('serve', ['sass'], function(){
 	})
 
 	gulp.watch(sassSources, ['sass']);
-	gulp.watch(htmlSource, jsSource).on('change', browserSync.reload);
+	gulp.watch(htmlSource).on('change', browserSync.reload);
 });
 
 
