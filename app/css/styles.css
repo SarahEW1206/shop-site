@@ -25,7 +25,7 @@
   height: 120%;
   margin: 0 auto;
   position: relative;
-  background-color: white;
+  /*background-color: rgba(255, 255, 255, 1);*/
 }
 
 .icon {
@@ -76,6 +76,8 @@
   flex-grow: 1;
   margin: 0;
   padding: 0;
+  position: relative;
+  top: -.8em;
   background-color: #ffffff;
 }
 
@@ -134,6 +136,7 @@
 
 #featuredProductNav li a:visited {
   color: #6d5a75;
+  background-color: none;
 }
 
 html {
