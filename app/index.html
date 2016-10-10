@@ -2,12 +2,13 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>Page Title</title>
+  <title>Eureka!</title>
   <meta name="description" content="Eureka. The greatest store in the world.">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/styles.css">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet">
+  <script src="js/script.js"></script>
 
   <style>
 
@@ -25,36 +26,40 @@
 
     <nav>
       <ul>
-        <li><a href="#"><svg class="icon icon-headphones"><use xlink:href="#icon-headphones"></use></svg>MUSIC</a></li>
-        <li><a href="#"><svg class="icon icon-gift"><use xlink:href="#icon-gift"></use></svg>GIFTS</a></li>
-        <li><a href="#"><svg class="icon icon-headphones"><use xlink:href="#icon-headphones"></use></svg>MUSIC</a></li>
-        <li><a href="#"><svg class="icon icon-gift"><use xlink:href="#icon-gift"></use></svg>GIFTS</a></li>
-        <li><a href="#"><svg class="icon icon-headphones"><use xlink:href="#icon-headphones"></use></svg>MUSIC</a></li>
-        <li><a href="#"><svg class="icon icon-gift"><use xlink:href="#icon-gift"></use></svg>GIFTS</a></li>
+        <li><a class="navlink" href="#"><svg class="icon icon-headphones"><use xlink:href="#icon-headphones"></use></svg>MUSIC</a></li>
+        <li><a class="navlink" href="#"><svg class="icon icon-gift"><use xlink:href="#icon-gift"></use></svg>GIFTS</a></li>
+        <li><a class="navlink" href="#"><svg class="icon icon-headphones"><use xlink:href="#icon-headphones"></use></svg>KIDS</a></li>
+        <li><a  class="navlink"href="#"><svg class="icon icon-gift"><use xlink:href="#icon-gift"></use></svg>MENS</a></li>
+        <li><a  class="navlink"href="#"><svg class="icon icon-headphones"><use xlink:href="#icon-headphones"></use></svg>WOMENS</a></li>
+        <li><a class="navlink" href="#"><svg class="icon icon-gift"><use xlink:href="#icon-gift"></use></svg>SALE</a></li>
       </ul>
     </nav>
   </header>
 
   <div class="wrapper">
 
-    <div class="slider">
-      IMAGE CAROUSEL GOES HERE
+    <div id="slider">
+      <img id="sliderimage" src="img/newmusic.svg">
     </div>
 
-    <h1>Hello everyone!</h1>
-    <p>Check out our new releases and great gift items perfect for the holidays. Check out our new releases and great gift items perfect for the holidays. Check out our new releases and great gift items perfect for the holidays. Check out our new releases and great gift items perfect for the holidays. Check out our new releases and great gift items perfect for the holidays. Check out our new releases and great gift items perfect for the holidays. Check out our new releases and great gift items perfect for the holidays. Check out our new releases and great gift items perfect for the holidays. Check out our new releases and great gift items perfect for the holidays. Check out our new releases and great gift items perfect for the holidays. Check out our new releases and great gift items perfect for the holidays.</p>
-  </br>
-  </br>
-  </br>
-  </br>
-  <p>Check out our new releases and great gift items perfect for the holidays. Check out our new releases and great gift items perfect for the holidays. Check out our new releases and great gift items perfect for the holidays. Check out our new releases and great gift items perfect for the holidays. Check out our new releases and great gift items perfect for the holidays. Check out our new releases and great gift items perfect for the holidays. Check out our new releases and great gift items perfect for the holidays. Check out our new releases and great gift items perfect for the holidays. Check out our new releases and great gift items perfect for the holidays. Check out our new releases and great gift items perfect for the holidays. Check out our new releases and great gift items perfect for the holidays.</p>
-  </br>
-  </br>
-  </br>
-  </br>
-  <p>Check out our new releases and great gift items perfect for the holidays. Check out our new releases and great gift items perfect for the holidays. Check out our new releases and great gift items perfect for the holidays. Check out our new releases and great gift items perfect for the holidays. Check out our new releases and great gift items perfect for the holidays. Check out our new releases and great gift items perfect for the holidays. Check out our new releases and great gift items perfect for the holidays. Check out our new releases and great gift items perfect for the holidays. Check out our new releases and great gift items perfect for the holidays. Check out our new releases and great gift items perfect for the holidays. Check out our new releases and great gift items perfect for the holidays.</p>
+    <div id="slidernav">
+      <img class="dot" onclick="changePicOne()" src="img/dot.svg" height="12px">
+      <img class="dot" onclick="changePicTwo()" src="img/dot.svg" height="12px">
+      <img class="dot" onclick="changePicThree()" src="img/dot.svg" height="12px">
+    </div>
 
+<!--     <h1>Hello everyone!</h1>
+    <p>Check out our new releases and great gift items perfect for the holidays. Check out our new releases and great gift items perfect for the holidays.</p> -->
 
+    <div>
+    <h1>Featured Product</h1>
+    <div id="mainNav">
+      <ul id="imageGallery">
+        <li><a href="img/pagoda.jpg" title="Temple by a river">Image 1</a></li>
+        <li><a href="img/bridge.jpg" title="Shrine">Image 2</a></li>
+        <li><a href="img/bamboo.jpg" title="Bamboo">Image 3</a></li>
+      </ul>
+    </div>
 </div>
 
 
