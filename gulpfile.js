@@ -12,9 +12,9 @@ var sassOptions = {
 };
 
 var sassSources = './scss/**/*.scss';
-var sassOutput = './app/css';
+var sassOutput = './app/css';  
 var htmlSource = 'app/**/*.html';
-var jsSource = 'app/js/*.js';
+var jsSource = 'app/js/*.js';  
 
 gulp.task('sass', function(){
 	return gulp.src(sassSources)
@@ -32,10 +32,23 @@ gulp.task('serve', ['sass'], function(){
 	})
 
 	gulp.watch(sassSources, ['sass']);
-	gulp.watch(htmlSource).on('change', browserSync.reload);
-	gulp.watch(jsSource).on('change', browserSync.reload);
+	gulp.watch(htmlSource, browserSync.reload);
+	gulp.watch(jsSource, browserSync.reload);
 });
 
+var sftp = require('gulp-sftp');
+
+gulp.task('deploy', function() {
+	return gulp.src('./app/**/*')
+	.pipe(sftp({
+		host: 'oit2.scps.nyu.edu',
+		user: 'waldies',
+		pass: 'sw123890',
+		remotePath: '/home/w/waldies/web'
+	}))
+});
+
+gulp.task('default', ['serve']);
 
 
 

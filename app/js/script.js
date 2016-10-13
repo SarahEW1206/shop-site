@@ -1,4 +1,3 @@
-
 var gallery = ["/img/newmusic.svg", "/img/greatgifts.svg", "/img/image3.svg"];
 var sliderPic = document.getElementById("sliderimage");
 
@@ -23,35 +22,38 @@ function prepareGallery() {
 	var gallery = document.getElementById("imageGallery");
 	var links = gallery.getElementsByTagName("a");
 
-	for ( var i=0; i < links.length; i++ ) {
+	showPicOne(links[0]);
+
+	for (var i=0; i < links.length; i++ ) {
 		links[i].onclick = function() {
 			showPicOne(this, links);
 			return false;
 		}
-
-		links[0].parentNode.className = 'active';
-		showPicOne(links[0]);
 	}
 }
 
-function showPicOne(whichPic, links) {
-	if(links){
+// function showPicOne(whichPic, links) {
+function showPicOne(whichPic) {
 
-		for (var i=0; i < links.length; i++){
+	// if(links){
 
-			links[i].parentNode.className = "";
-		}
-	}
+	// 	for (var i=0; i < links.length; i++){
 
-	whichPic.parentNode.className = 'active';
+	// 		links[i].parentNode.className = "";
+	// 		}
+	// 	}
 
+	// whichPic.parentNode.className = 'active';
 
 	var source = whichPic.getAttribute("href");
 	var placeholder = document.getElementById("placeholder");
+	
 	placeholder.setAttribute("src",source);
+	
 	var text = whichPic.getAttribute("title");
 	var description = document.getElementById("description");
-		// console.log(description.childNodes[0].nodeValue); 
-		description.firstChild.nodeValue = text;
+	
+	description.firstChild.nodeValue = text;
+
 	}
 

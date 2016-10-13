@@ -53,7 +53,7 @@
 	justify-content: center;
 }
 
-.dot {
+.dots {
 	margin: 0 5px;
 }
 
@@ -135,7 +135,7 @@
 	margin-right: 1em;
 }
 
-#featuredProductNav li a:active{
+.active a {
 	color: #ffffff;
 	background-color: none;
 }
@@ -151,7 +151,7 @@ html {
 body {
 	height: 100%;
   	overflow: auto;
-	background: url("/img/background.svg");
+	background: url("../img/background.svg");
 	background-attachment: fixed;
 }
 
@@ -208,4 +208,75 @@ h1 {
 
 p {
 	padding-left: .5em;
+}
+
+/* styling for carousel */
+
+.mySlides {display:none}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 100%;
+  position: relative;
+  margin: auto;
+}
+
+/* The dots/bullets/indicators */
+
+.dotdiv {
+  position: relative;
+  top: -1.5em;
+  margin: 0 auto;
+  height: 13px;
+}
+
+.dot {
+  height: 8px;
+  width: 8px;
+  margin-right: 1.5px;
+  margin-bottom: .5em;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+@media (min-width: 500px) {
+  .dot {
+  height: 10px;
+  width: 10px;
+  margin-right: 2px;}
+}
+
+@media (min-width: 800px) {
+  .dot {
+  height: 12px;
+  width: 12px;
+  margin-right: 3px;}
+}
+.showing {
+  background-color: #717171;
+}
+
+/* Fading animation */
+/*.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}*/
+
+/*@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}*/
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
 }
