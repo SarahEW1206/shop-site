@@ -8,12 +8,13 @@
   <link href="https://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <script src="js/script.js"></script>
+  <script src="https://code.angularjs.org/1.2.3/angular.js"></script>
 </head>
 
 <style>
 </style>
 
-<body>
+<body data-ng-app>
 
   <header>
 
@@ -63,38 +64,38 @@
   <span class="dot"></span>
 </div>
 
-
-
-
     <div id="lowerPortion">
-      <div id="productSpotlight">
+            <div id="productSpotlight">
 
-        <h1 id="featuredProduct">Featured Product</h1>
-        <h2 id="productName">Lightweight Scarf</h2>
+      <h1 id="h1featuredProduct">Featured Item</h1>
+      <h2 id="h2productName">Lightweight Scarf</h2>
 
-        <h3 id="description">Blue Floral - $19.99</h3>
-        <img id="placeholder" src="img/bluefloral.jpg" alt="Product Image">
+      <div data-ng-controller="ListController">
+        <ul id="imageGallery">
+          <li data-ng-repeat="entry in entries">
 
-        <div id="featuredProductNav">
-          <h4>Color Options:</h4>
-          <ul id="imageGallery">
-            <li><a href="img/bluefloral.jpg" title="Blue Floral - $19.99">Blue Floral</a></li>
-            <li><a href="img/plaid.jpg" title="Pink Plaid - $19.99">Pink Plaid</a></li>
-            <li><a href="img/pinksquares.jpg" title="Pink Squares - $19.99">Pink Squares</a></li>
-          </ul>
-        </div>
+            <a href="img/{{ entry.picture[0] }}" title="{{ entry.title }}">
+              <img src="img/{{ entry.picture[0] }}">
+            </a>
+          </li>
+        </ul>
+      </div>
 
-      </div> <!--product spotlight div end-->
+      <div id="content">
+        <img id="placeholder" src="img/bluefloral.jpg" alt="Placeholder">
+        <p id="description">Select an image.</p>
+      </div>
 
+    </div> <!--product spotlight div end-->
 
-      <div id="latestNews">
-       <h1>Holiday Specials!</h1>
-       <p>Check out our new releases and great gift items perfect for the holidays. <a href="">Shop now!</a></p>
-     </div>
+        <div id="latestNews">
+     <h1>Hello everyone!</h1>
+     <p>Check out our new releases and great gift items perfect for the holidays. Check out our new releases and great gift items perfect for the holidays.</p>
+   </div>
 
-   </div> <!--lower portion div end-->
+ </div> <!--lower portion div end-->
 
-   <a href="index.html">Index</a>
+ <a href="index.html">Index</a>
 
  </div> <!--wrapper div end-->
 
@@ -121,6 +122,8 @@ function showSlides() {
 </script>
 
 </body>
+
+
 
 <svg width="0" height="0" class="visually-hidden">
   <symbol id="icon-headphones" viewBox="0 0 32 32">
