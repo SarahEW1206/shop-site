@@ -5,38 +5,22 @@ function ListController( $scope ) {
 		"title": "Blue Floral Scarf - $19.99",
 		"name": "Blue Floral",
 		"picture": ["bluefloral.jpg"],
-		"buylink": ""
+		"buylink": "bluefloralscarf.html"
 	},
 	{
 		"title": "Pink Squares Scarf - $19.99",
 		"name": "Pink Squares",
 		"picture": ["pinksquares.jpg"],
-		"buylink": ""
+		"buylink": "pinksquaresscarf.html"
 	},
 	{
 		"title": "Blue Plaid Scarf - $19.99",
 		"name": "Blue Plaid",
 		"picture": ["plaid.jpg"],
-		"buylink": ""
+		"buylink": "blueplaidscarf.html"
 	},
 	]
 };
-
-var gallery = ["/img/newmusic.svg", "/img/greatgifts.svg", "/img/image3.svg"];
-var sliderPic = document.getElementById("sliderimage");
-
-function changePicOne() {
-		// sliderPic.src = gallery[1] WHY DOESN'T THIS WORK?
-		document.getElementById("sliderimage").src = gallery[0]
-	}
-
-	function changePicTwo() {
-		document.getElementById("sliderimage").src = gallery[1]
-	}
-
-	function changePicThree() {
-		document.getElementById("sliderimage").src = gallery[2]
-	}
 
 	window.onload = function () {
 		prepareGallery();
@@ -56,18 +40,17 @@ function changePicOne() {
 		}
 	}
 
-// function showPicOne(whichPic, links) {
-	function showPicOne(whichPic) {
+function showPicOne(whichPic, links) {
 
-	// if(links){
+	if(links){
 
-	// 	for (var i=0; i < links.length; i++){
+		for (var i=0; i < links.length; i++){
 
-	// 		links[i].parentNode.className = "";
-	// 		}
-	// 	}
+			links[i].parentNode.className = "";
+			}
+		}
 
-	// whichPic.parentNode.className = 'active';
+	whichPic.parentNode.className = 'active';
 
 	var source = whichPic.getAttribute("href");
 	var placeholder = document.getElementById("placeholder");
@@ -78,6 +61,11 @@ function changePicOne() {
 	var description = document.getElementById("description");
 	
 	description.firstChild.nodeValue = text;
+
+	var buynow = document.getElementById("buynow");
+	var buylink = whichPic.getAttribute("buylink");
+
+	buynow.setAttribute("href", buylink);
 
 }
 

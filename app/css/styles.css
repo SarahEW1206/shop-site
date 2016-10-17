@@ -283,4 +283,12 @@ p {
   width: 100%;
 }
 
+#buynow {
+  position: relative;
+  bottom: 3em;
+  text-align: center;
+  display: block;
+  margin: auto;
+}
+
 /*# sourceMappingURL=styles.css.map */
