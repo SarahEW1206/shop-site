@@ -270,7 +270,8 @@ p {
   flex: 1;
   margin: 0 auto;
   padding: 1em;
-  background-color: #42d56c;
+  /*	background-color: rgba(66, 213, 108, 1);;
+*/
 }
 
 #h1featuredProduct {
