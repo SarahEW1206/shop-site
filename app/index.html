@@ -7,8 +7,10 @@
   <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <script src="js/script.js"></script>
   <script src="https://code.angularjs.org/1.2.3/angular.js"></script>
+  <script src="js/script.js"></script>
+  <script src="js/slideshow.js"></script>
+  
 </head>
 
 <style>
@@ -34,38 +36,39 @@
     </nav>
   </header>
 
-<div class="wrapper">
+  <div class="wrapper">
 
-<div class="slideshow-container">
+    <div class="slideshow-container">
 
-<div class="mySlides fade">
-  <div class="numbertext"></div>
-  <img src="img/newmusic.svg" style="width:100%">
-  <div class="text"></div>
-</div>
+      <div class="mySlides fade">
+        <div class="numbertext"></div>
+        <img src="img/newmusic.svg" style="width:100%">
+        <div class="text"></div>
+      </div>
 
-<div class="mySlides fade">
-  <div class="numbertext"></div>
-  <img src="img/greatgifts.svg" style="width:100%">
-  <div class="text"></div>
-</div>
+      <div class="mySlides fade">
+        <div class="numbertext"></div>
+        <img src="img/greatgifts.svg" style="width:100%">
+        <div class="text"></div>
+      </div>
 
-<div class="mySlides fade">
-  <div class="numbertext"></div>
-  <img src="img/image3.svg" style="width:100%">
-  <div class="text"></div>
-</div>
+      <div class="mySlides fade">
+        <div class="numbertext"></div>
+        <img src="img/image3.svg" style="width:100%">
+        <div class="text"></div>
+      </div>
 
-</div>
+    </div>
 
-<div class="dotdiv" style="text-align:center">
-  <span class="dot"></span>
-  <span class="dot"></span>
-  <span class="dot"></span>
-</div>
+    <div class="dotdiv" style="text-align:center">
+      <span class="dot"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+    </div>
 
-    <div id="lowerPortion">
-            <div id="productSpotlight">
+<div id="lowerPortion">
+
+      <div id="productSpotlight">
 
       <h1 id="h1featuredProduct">Featured Item</h1>
       <h2 id="h2productName">Lightweight Scarf</h2>
@@ -74,33 +77,34 @@
         <ul id="imageGallery">
           <li data-ng-repeat="entry in entries">
 
-            <a href="img/{{ entry.picture[0] }}" title="{{ entry.title }}">
+              <a href="img/{{ entry.picture[0] }}" title="{{ entry.title }}" buylink="{{ entry.buylink }}"> 
               <img src="img/{{ entry.picture[0] }}">
             </a>
           </li>
         </ul>
       </div>
 
-      <div id="content">
-        <img id="placeholder" src="img/bluefloral.jpg" alt="Placeholder">
-        <p id="description">Select an image.</p>
-        <a href="{{ entry.buylink }}" >Buy now!</a>
-      </div>
+        <div id="content">
+          <img id="placeholder" src="img/bluefloral.jpg" alt="Placeholder">
+          <p id="description">Select an image.</p>
+          <a id="buynow" href="">Buy now!</a>
+        </div>
 
-    </div> <!--product spotlight div end-->
+      </div> <!--product spotlight div end-->
 
-    <div id="latestNews">
-    
+      <div id="latestNews">
+       <h1>Hello everyone!</h1>
+       <p>Check out our new releases and great gift items perfect for the holidays. Check out our new releases and great gift items perfect for the holidays.</p>
+       <a class="twitter-timeline" data-height="500" href="https://twitter.com/TheGrommet">Tweets by TheGrommet</a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+     </div>
 
-<a class="twitter-timeline" data-height="720" data-theme="dark" href="https://twitter.com/TheGrommet">Tweets by TheGrommet</a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
-   </div>
+   </div> <!--lower portion div end-->
 
- </div> <!--lower portion div end-->
-
- <a href="index.html">Index</a>
+   <a href="index.html">Index</a>
 
  </div> <!--wrapper div end-->
 
+</body>
 
 <script>
 var slideIndex = 0;
@@ -123,10 +127,6 @@ function showSlides() {
     setTimeout(showSlides, 3000); // Change image every 2 seconds
 }
 </script>
-
-</body>
-
-
 
 <svg width="0" height="0" class="visually-hidden">
   <symbol id="icon-headphones" viewBox="0 0 32 32">
