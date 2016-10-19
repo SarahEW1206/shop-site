@@ -7,7 +7,7 @@
 html {
   overflow: hidden;
   height: 100%;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Quicksand', sans-serif;
   color: #333;
 }
 
@@ -250,33 +250,83 @@ p {
   }
 }
 
-/*Angular Gallery Styling*/
+/*lower portion layout*/
 #lowerPortion {
   display: flex;
   flex-wrap: wrap;
-  flex-grow: 1;
+  flex: 1 1 auto;
   margin: 0;
   padding: 0;
   position: relative;
   top: -.8em;
-  background-color: #ffffff;
-}
-
-#productSpotlight {
-  max-width: 30em;
+  /*	background-color: #ffffff;
+*/
 }
 
 #latestNews {
   flex: 1;
-  margin: 0 auto;
+  min-width: 250px;
   padding: 1em;
   background-color: #42d56c;
 }
 
-#latestNews p {
-  margin-bottom: 2em;
+@media (min-width: 560px) {
+  #latestNews {
+    width: calc(50%-.5em);
+  }
 }
 
+@media (min-width: 800px) {
+  #latestNews {
+    max-width: 300px;
+  }
+}
+
+#productSpotlight {
+  flex: 1;
+  min-width: 250px;
+  margin-top: .5em;
+  background-color: #ffffff;
+}
+
+@media (min-width: 478px) {
+  #productSpotlight {
+    min-width: 260px;
+  }
+}
+
+@media (min-width: 490px) {
+  #productSpotlight {
+    min-width: 250px;
+    margin-right: .25em;
+  }
+}
+
+@media (min-width: 560px) {
+  #productSpotlight {
+    margin: 0 0 0 .25em;
+  }
+}
+
+@media (min-width: 765px) {
+  #productSpotlight {
+    margin: 0 .25em;
+  }
+}
+
+#twitter {
+  flex: 1;
+  margin-top: .5em;
+  background-color: #ffffff;
+}
+
+@media (min-width: 765px) {
+  #twitter {
+    margin-top: 0;
+  }
+}
+
+/*product spotlight styling*/
 #h1featuredProduct {
   margin: .5em 0 0 .5em;
   padding: 0;
@@ -294,7 +344,7 @@ p {
 }
 
 #imageGallery li {
-  width: 100px;
+  width: 32%;
 }
 
 #imageGallery img {
@@ -322,7 +372,7 @@ p {
   top: 2rem;
   color: white;
   padding: 1rem;
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(0, 0, 0, 0.6);
   width: 100%;
 }
 
