@@ -1,23 +1,20 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
 <head>
   <meta charset="utf-8">
-  <title>Eureka!</title>
-  <meta name="description" content="Eureka. The greatest store in the world.">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>slider test</title>
   <link rel="stylesheet" href="css/styles.css">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <script src="js/script.js"></script>
   <script src="https://code.angularjs.org/1.2.3/angular.js"></script>
-
-  <style>
-
-  </style>
-
 </head>
 
-<body data-ng-app> 
+<style>
+</style>
+
+<body data-ng-app>
 
   <header>
 
@@ -37,22 +34,38 @@
     </nav>
   </header>
 
-  <div class="wrapper">
+<div class="wrapper">
 
-    <div id="slider">
-      <img id="sliderimage" src="img/newmusic.svg">
-    </div>
+<div class="slideshow-container">
 
-    <div id="slidernav">
-      <img class="dots" onclick="changePicOne()" src="img/dot.svg" height="12px">
-      <img class="dots" onclick="changePicTwo()" src="img/dot.svg" height="12px">
-      <img class="dots" onclick="changePicThree()" src="img/dot.svg" height="12px">
-    </div>
+<div class="mySlides fade">
+  <div class="numbertext"></div>
+  <img src="img/newmusic.svg" style="width:100%">
+  <div class="text"></div>
+</div>
 
+<div class="mySlides fade">
+  <div class="numbertext"></div>
+  <img src="img/greatgifts.svg" style="width:100%">
+  <div class="text"></div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext"></div>
+  <img src="img/image3.svg" style="width:100%">
+  <div class="text"></div>
+</div>
+
+</div>
+
+<div class="dotdiv" style="text-align:center">
+  <span class="dot"></span>
+  <span class="dot"></span>
+  <span class="dot"></span>
+</div>
 
     <div id="lowerPortion">
-
-      <div id="productSpotlight">
+            <div id="productSpotlight">
 
       <h1 id="h1featuredProduct">Featured Item</h1>
       <h2 id="h2productName">Lightweight Scarf</h2>
@@ -61,7 +74,7 @@
         <ul id="imageGallery">
           <li data-ng-repeat="entry in entries">
 
-            <a href="img/{{ entry.picture[0] }}" title="{{ entry.title }}" buylink="{{ entry.buylink }}"> 
+            <a href="img/{{ entry.picture[0] }}" title="{{ entry.title }}">
               <img src="img/{{ entry.picture[0] }}">
             </a>
           </li>
@@ -70,29 +83,49 @@
 
       <div id="content">
         <img id="placeholder" src="img/bluefloral.jpg" alt="Placeholder">
-        <p id="description">Select an image.></p>
-        <a id="buynow" href="">Buy now!</a>
-
+        <p id="description">Select an image.</p>
+        <a href="{{ entry.buylink }}" >Buy now!</a>
       </div>
 
     </div> <!--product spotlight div end-->
 
-
-    <div id="latestNews">
+        <div id="latestNews">
      <h1>Hello everyone!</h1>
      <p>Check out our new releases and great gift items perfect for the holidays. Check out our new releases and great gift items perfect for the holidays.</p>
    </div>
 
  </div> <!--lower portion div end-->
 
- <a href="slidertest.html">Slider Test</a>
+ <a href="index.html">Index</a>
 
-</div> <!--wrapper div end-->
+ </div> <!--wrapper div end-->
 
 
+<script>
+var slideIndex = 0;
+showSlides();
 
+function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    for (i = 0; i < slides.length; i++) {
+       slides[i].style.display = "none";
+    }
+    slideIndex++;
+    if (slideIndex> slides.length) {slideIndex = 1}
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" showing", "");
+    }
+    slides[slideIndex-1].style.display = "block";
+    dots[slideIndex-1].className += " showing";
+    setTimeout(showSlides, 3000); // Change image every 2 seconds
+}
+</script>
 
 </body>
+
+
 
 <svg width="0" height="0" class="visually-hidden">
   <symbol id="icon-headphones" viewBox="0 0 32 32">
@@ -107,6 +140,5 @@
   </symbol>
 </svg>
 
-
-
 </html>
+

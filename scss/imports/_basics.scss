@@ -4,20 +4,45 @@
   padding: 0; }
 
 
+html {
+  overflow: hidden;
+  height: 100%;
+  font-family: 'Open Sans', sans-serif;
+  color: #333;
+}
+
+body {
+	height: 100%;
+  	overflow: auto;
+	background: url("../img/background.svg");
+	background-attachment: fixed;
+}
+
+header {
+	margin: 0;
+}
+
+
 .logobar {
 	display: block;
- 	background-color: rgba(255, 255, 255, .9);
+ 	background-color: rgba(255, 255, 255, 1);
  	max-width: $width;
- 	height: 125px;
+ 	height: 105px;
  	margin: 0em auto;
  	border-radius: 1em 1em 0 0;
 }
 
 .logo {
-	height: 100px ;
-	width: 157px ;
+	width: 200px ;
 	margin: 1em 0 .5em 1em;
 	float: left;
+}
+
+#cart {
+	float: right;
+	margin-right: 1em;
+	margin-top: 60px;
+	font-size: .5em;
 }
 
 .wrapper {
@@ -29,10 +54,15 @@
 }
 
 .icon {
-	fill: rgb(109, 90, 117);
-	width: 20px;
-	height: 20px;
+	fill: rgba(66, 213, 108, 1);
+	width: 25px;
+	height: 25px;
 	padding-right: .5em;
+
+	@media (min-width: 800px) {
+		width: 32px;
+		height: 32px;
+	}
 }
 
 .slider {
@@ -70,23 +100,6 @@
 	letter-spacing: 3px;
 }
 
-html {
-  overflow: hidden;
-  height: 100%;
-  font-family: 'Open Sans', sans-serif;
-}
-
-body {
-	height: 100%;
-  	overflow: auto;
-	background: url("../img/background.svg");
-	background-attachment: fixed;
-}
-
-header {
-	margin: 0;
-}
-
 nav {
 	margin: 0 auto;
 	max-width: $width;
@@ -110,23 +123,39 @@ nav ul li {
 	flex-grow: 1;
 	padding: .4em;
 	/*margin: .05em*/;
-	background-color: rgba(56, 183, 183, .9);
+	background-color: rgba(0,0,0,.90);
 	border-radius: 0;
 	width: 6em;
-}
 
-@media (min-width: 411px) {
-	nav ul li {
-		width: 140px;
+	@media (min-width: 411px) {
+		width: 100px;
 	}
-}
 
-@media (min-width: 516px) {
-	nav ul li {
-		width: 80px;
+	@media (min-width: 445px) {
+		width: 115px;
+	}
+
+	@media (min-width: 516px) {
+		width: 120px;
 		padding: .6em;
 	}
+
+	@media (min-width: 534px) {
+		width: 160px;
+	}
+
+	@media (min-width: 700px) {
+		width: 100px;
+	}
+
+	@media (min-width: 850px) {
+		font-size: 1.2em;
+	}
+
 }
+
+
+
 
 h1 {
 	margin: 0;
@@ -231,7 +260,7 @@ p {
 	flex: 1;
 	margin: 0 auto;
 	padding: 1em;
-	background-color: pink;
+	background-color: rgba(66, 213, 108, 1);;
 }
 
 #h1featuredProduct {
@@ -241,6 +270,7 @@ p {
 
 #h2productName {
 	margin: 0 0 1em 1rem;
+	color: rgba(23, 103, 255, 1);
 }
 
 #imageGallery {
@@ -279,12 +309,12 @@ p {
 		background-color: rgba(0,0,0,0.8);
 		width: 100%;
 	}
-}
 
-#buynow {
-	position: relative;
-	bottom: 3em;
-	text-align: center;
-	display: block;
-	margin: auto;
+	a {
+		position: relative;
+		bottom: 3em;
+		text-align: center;
+		display: block;
+		margin: auto;
+	}
 }
