@@ -67,14 +67,6 @@ function showPicOne(whichPic, links) {
 
 	buynow.setAttribute("href", buylink);
 
-	var price = whichPic.getAttribute("price");
-	var albumprice = document.getElementById("albumprice");
-
-	debugger;
-
-	albumprice.firstChild.nodeValue = price;
-
-	console.log(albumprice)
 
 }
 
