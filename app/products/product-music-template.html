@@ -2,22 +2,27 @@
 	Featured Albums</h1>
 <h2 id="h2productName"></h2>
 
-<div id="selectedalbum">
-	<img id="placeholder" src="img/bluefloral.jpg" alt="Placeholder">
-	<p id="description">Select an image.</p>
-	<div id="buyline">
-		<h3 id="albumprice">Album Price</h3>
-		<a id="buyalbum" href=" ">Buy now!</a>
+<div id="productlayout">
+
+	<div id="selectedalbum">
+		<img id="placeholder" src="img/bluefloral.jpg" alt="Placeholder">
+		<p id="description">Select an image.</p>
+		<div id="buyline">
+			<h3 id="albumprice">Album Price</h3>
+			<a id="buyalbum" href=" ">Buy now!</a>
+		</div>
 	</div>
-</div>
 
-<div>
-	<ul id="musicGallery">
-		<li ng-repeat="album in $ctrl.albums">
+	<div id="allalbums">
+		<ul id="musicGallery">
+			<li ng-repeat="album in $ctrl.albums">
 
-			<a href="img/{{ album.picture[0] }}" title="{{ album.title }}" artist="{{ album.name }}" buylink="{{ album.buylink }}" price="{{ album.price }}">
-				<img src=" img/{{ album.picture[0] }} ">
-			</a>
-		</li>
-	</ul>
+				<a href="img/{{ album.picture[0] }}" title="{{ album.title }}" artist="{{ album.name }}" buylink="{{ album.buylink }}" price="{{ album.price }}">
+					<img src=" img/{{ album.picture[0] }} ">
+				</a>
+			</li>
+		</ul>
+	</div>
+
 </div>
+<!--end "productlayout" div-->

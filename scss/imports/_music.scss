@@ -1,28 +1,9 @@
-#productSpotlight {
-	flex: 1;
-	min-width: 250px;
-	margin-top: .5em;
-	background-color: #ffffff;
-
-	@media (min-width: 478px) {
-		min-width: 260px;
-	}
-
-	@media (min-width: 490px) {
-		min-width: 250px;
-		margin-right: .25em;
-	}
-
-	@media (min-width: 560px) {
-		margin: 0 0 0 .25em;
-	}
-
-	@media (min-width: 765px) {
-		margin: 0 .25em;
-	}
+#productlayout {
+   	display: flex;
+	flex-wrap: wrap;
+	flex: 1 1 auto;
+        
 }
-
-/*product spotlight styling*/
 
 #h1featuredProduct {
 	margin: .5em 0 0 .5em;
@@ -34,6 +15,11 @@
 	color: rgba(23, 103, 255, 1);
 }
 
+#allalbums {
+    flex: 1;
+    min-width: 400px;
+}
+
 #musicGallery {
 	list-style: none;
 	display: flex;
@@ -41,7 +27,7 @@
 	margin-left: 1rem;
 
 	li {
-		width: 32%;
+		width: 25%;
 	}
 
 	img {
@@ -55,7 +41,8 @@
 }
 
 #selectedalbum {
-	position: relative;
+    flex: 1;
+    min-width: 200px;
 
 	img {
 		border: none;
@@ -64,12 +51,10 @@
 		margin: auto;
 	}
 	p {
-		// position: absolute;
-		// top: 2rem;
 		color: white;
 		padding: .5rem;
 		background-color: rgba(66, 213, 108, 1);
-		width: 100%;
+		width: 80%;
         text-align: center;
 		display: block;
 		margin: auto;
