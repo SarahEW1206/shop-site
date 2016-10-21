@@ -23,7 +23,11 @@
 
 #allalbums {
     flex: 1;
-    min-width: 400px;
+    min-width: 100%;
+
+	@media (min-width: 650px) {
+		min-width: 50%;
+	}
 }
 
 #musicGallery {

@@ -409,7 +409,13 @@ p {
 
 #allalbums {
   flex: 1;
-  min-width: 400px;
+  min-width: 100%;
+}
+
+@media (min-width: 650px) {
+  #allalbums {
+    min-width: 50%;
+  }
 }
 
 #musicGallery {
