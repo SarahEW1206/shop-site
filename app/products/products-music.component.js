@@ -17,47 +17,62 @@ angular.module('productApp').component('productMusic', {
                 "buylink": ""
             },
             {
-                "title": "unknown",
+                "title": "London Calling",
                 "name": "The Clash",
                 "picture": ["albumclash.jpg"],
                 "price": "$14.99",
                 "buylink": ""
             },
             {
-                "title": "unknown",
+                "title": "Infinity on High",
                 "name": "Fallout Boy",
                 "picture": ["albumfalloutboy.jpg"],
                 "price": "$14.99",
                 "buylink": ""
             },
             {
-                "title": "unknown",
+                "title": "In Your Honor",
                 "name": "Foo Fighters",
                 "picture": ["albumfoo.jpg"],
                 "price": "$14.99",
                 "buylink": ""
             },
             {
-                "title": "unknown",
+                "title": "St. Elsewhere",
                 "name": "Gnarls Barkley",
                 "picture": ["albumgnarls.jpg"],
                 "price": "$14.99",
                 "buylink": ""
             },
             {
-                "title": "unknown",
-                "name": "The Academy Is...",
+                "title": "American Idiot",
+                "name": "Green Day",
                 "picture": ["albumgreenday.jpg"],
                 "price": "$14.99",
                 "buylink": ""
             },
             {
-                "title": "unknown",
-                "name": "The Academy Is...",
+                "title": "Light Grenades",
+                "name": "Incubus",
                 "picture": ["albumincubus.jpg"],
                 "price": "$14.99",
                 "buylink": ""
             },
+            {
+                "title": "Under the Iron Sea",
+                "name": "Keane",
+                "picture": ["albumkeane.jpg"],
+                "price": "$14.99",
+                "buylink": ""
+            },
+            {
+                "title": "Room for Squares",
+                "name": "John Mayer",
+                "picture": ["albummayer.jpg"],
+                "price": "$14.99",
+                "buylink": ""
+            },
+
         ]
     }
 });

@@ -1,8 +1,14 @@
+.musicwrapper {
+	max-width: $width;
+	margin: 0 auto;
+	position: relative;
+	top: -1em;
+}
+
 #productlayout {
    	display: flex;
 	flex-wrap: wrap;
-	flex: 1 1 auto;
-        
+	flex: 1 1 auto;    
 }
 
 #h1featuredProduct {
@@ -36,7 +42,7 @@
 	}
 
 	.active img {
-	border-color: #666;
+	border: 2px solid #666;
 	}
 }
 

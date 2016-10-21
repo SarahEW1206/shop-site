@@ -384,6 +384,13 @@ p {
   margin: auto;
 }
 
+.musicwrapper {
+  max-width: 90%;
+  margin: 0 auto;
+  position: relative;
+  top: -1em;
+}
+
 #productlayout {
   display: flex;
   flex-wrap: wrap;
@@ -422,7 +429,7 @@ p {
 }
 
 #musicGallery .active img {
-  border-color: #666;
+  border: 2px solid #666;
 }
 
 #selectedalbum {
