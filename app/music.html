@@ -10,10 +10,10 @@
 	<link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<script src="https://code.angularjs.org/1.5.8/angular.js"></script>
-	<script src="js/script.js"></script>
+	<script src="js/script-music.js"></script>
 	<!--<script src="js/slideshow.js"></script>-->
 	<script src="app-module.js"></script>
-	<script src="products/products-feat.component.js"></script>
+	<script src="products/products-music.component.js"></script>
 
 </head>
 
@@ -28,7 +28,7 @@
 		<nav>
 			<ul>
 				<li>
-					<a class="navlink" href="music.html">
+					<a class="navlink" href="#">
 						<svg class="icon icon-headphones">
 							<use xlink:href="#icon-headphones"></use>
 						</svg>MUSIC</a>
@@ -69,82 +69,14 @@
 
 	<div class="wrapper">
 
-		<div class="slideshow-container">
-
-			<div class="mySlides fade">
-				<div class="numbertext"></div>
-				<img src="img/newmusic.svg" style="width:100%">
-				<div class="text"></div>
-			</div>
-
-			<div class="mySlides fade">
-				<div class="numbertext"></div>
-				<img src="img/greatgifts.svg" style="width:100%">
-				<div class="text"></div>
-			</div>
-
-			<div class="mySlides fade">
-				<div class="numbertext"></div>
-				<img src="img/image3.svg" style="width:100%">
-				<div class="text"></div>
-			</div>
-
+		<div ng-app="productApp" id="productSpotlight">
+			<product-music></product-music>
 		</div>
-
-		<div class="dotdiv" style="text-align:center">
-			<span class="dot"></span>
-			<span class="dot"></span>
-			<span class="dot"></span>
-		</div>
-
-		<div id="lowerPortion">
-
-			<div id="latestNews">
-				<h1>Hello everyone!</h1>
-				<p>Check out our new releases and great gift items perfect for the holidays. Check out our new releases and great gift items
-					perfect for the holidays.</p>
-			</div>
-
-			<div ng-app="productApp" id="productSpotlight">
-				<product-feat></product-feat>
-			</div>
-
-			<div id="twitter">
-				<a class="twitter-timeline" data-height="500" href="https://twitter.com/TheGrommet">Tweets by TheGrommet</a>
-				<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
-			</div>
-
-		</div>
-		<!--lower portion div end-->
-
-		<a href="index.html">Index</a>
 
 	</div>
 	<!--wrapper div end-->
 
 </body>
-
-<script>
-var slideIndex = 0;
-showSlides();
-
-function showSlides() {
-    var i;
-    var slides = document.getElementsByClassName("mySlides");
-    var dots = document.getElementsByClassName("dot");
-    for (i = 0; i < slides.length; i++) {
-       slides[i].style.display = "none";
-    }
-    slideIndex++;
-    if (slideIndex> slides.length) {slideIndex = 1}
-    for (i = 0; i < dots.length; i++) {
-        dots[i].className = dots[i].className.replace(" showing", "");
-    }
-    slides[slideIndex-1].style.display = "block";
-    dots[slideIndex-1].className += " showing";
-    setTimeout(showSlides, 3000); // Change image every 2 seconds
-}
-</script>
 
 <svg width="0" height="0" class="visually-hidden">
 	<symbol id="icon-headphones" viewBox="0 0 32 32">
