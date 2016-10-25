@@ -1,5 +1,3 @@
-NOTES/Questions:
-
 
 ##TO-DO:
 - [ ] Fix content in "latest news" (righthand side lower portion)
