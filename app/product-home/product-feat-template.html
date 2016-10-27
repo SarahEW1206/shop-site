@@ -1,0 +1,69 @@
+<div class="wrapper">
+
+	<div class="slideshow-container">
+
+		<div class="mySlides fade">
+			<div class="numbertext"></div>
+			<img src="img/newmusic.svg" style="width:100%">
+			<div class="text"></div>
+		</div>
+
+		<div class="mySlides fade">
+			<div class="numbertext"></div>
+			<img src="img/greatgifts.svg" style="width:100%">
+			<div class="text"></div>
+		</div>
+
+		<div class="mySlides fade">
+			<div class="numbertext"></div>
+			<img src="img/image3.svg" style="width:100%">
+			<div class="text"></div>
+		</div>
+
+	</div>
+
+	<div class="dotdiv" style="text-align:center">
+		<span class="dot"></span>
+		<span class="dot"></span>
+		<span class="dot"></span>
+	</div>
+
+	<div id="lowerPortion">
+
+		<!--<div id="latestNews">
+			<h1>Hello everyone!</h1>
+			<p>Check out our new releases and great gift items perfect for the holidays. Check out our new releases and great gift items
+				perfect for the holidays.</p>
+		</div>-->
+
+		<h1 id="h1featuredProduct">
+			Featured Item</h1>
+		<h2 id="h2productName">Lightweight Scarf</h2>
+
+		<div>
+			<ul id="imageGallery">
+				<li ng-repeat="product in $ctrl.products">
+
+					<a href="img/{{ product.picture[0] }}" title="{{ product.title }}" buylink="{{ product.buylink }}">
+						<img src="img/{{ product.picture[0] }}">
+					</a>
+				</li>
+			</ul>
+		</div>
+
+		<div id="content">
+			<img id="placeholder" src="img/bluefloral.jpg" alt="Placeholder">
+			<p id="description">Select an image.</p>
+			<a id="buynow" href="">Buy now!</a>
+		</div>
+
+		<!--<div id="twitter">
+			<a class="twitter-timeline" data-height="500" href="https://twitter.com/TheGrommet">Tweets by TheGrommet</a>
+			<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+		</div>-->
+
+	</div>
+	<!--lower portion div end-->
+
+</div>
+<!--wrapper div end-->

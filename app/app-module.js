@@ -1,1 +1,4 @@
-angular.module('productApp', []);
+angular.module('productApp', [
+    'ngRoute',
+    'productFeat'
+]);

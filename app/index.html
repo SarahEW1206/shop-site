@@ -10,10 +10,17 @@
 	<link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<script src="https://code.angularjs.org/1.5.8/angular.js"></script>
+	<script src="https://code.angularjs.org/1.5.8/angular-route.js"></script>
+	<script src="app.module.js"></script>
+	<script src="app.config.js"></script>
+	<script src="product-home/product-feat.module.js"></script>
+	<script src="product-home/product-feat.component.js"></script>
+	<script src="product-list/product-list.module.js"></script>
+	<script src="product-list/product-list.component.js"></script>
+	<script src="product-detail/product-detail.module.js"></script>
+	<script src="product-detail/product-detail.component.js"></script>
 	<script src="js/script.js"></script>
-	<!--<script src="js/slideshow.js"></script>-->
-	<script src="app-module.js"></script>
-	<script src="products/products-feat.component.js"></script>
+
 
 </head>
 
@@ -67,58 +74,9 @@
 		</nav>
 	</header>
 
-	<div class="wrapper">
-
-		<div class="slideshow-container">
-
-			<div class="mySlides fade">
-				<div class="numbertext"></div>
-				<img src="img/newmusic.svg" style="width:100%">
-				<div class="text"></div>
-			</div>
-
-			<div class="mySlides fade">
-				<div class="numbertext"></div>
-				<img src="img/greatgifts.svg" style="width:100%">
-				<div class="text"></div>
-			</div>
-
-			<div class="mySlides fade">
-				<div class="numbertext"></div>
-				<img src="img/image3.svg" style="width:100%">
-				<div class="text"></div>
-			</div>
-
-		</div>
-
-		<div class="dotdiv" style="text-align:center">
-			<span class="dot"></span>
-			<span class="dot"></span>
-			<span class="dot"></span>
-		</div>
-
-		<div id="lowerPortion">
-
-			<div id="latestNews">
-				<h1>Hello everyone!</h1>
-				<p>Check out our new releases and great gift items perfect for the holidays. Check out our new releases and great gift items
-					perfect for the holidays.</p>
-			</div>
-
-			<div ng-app="productApp" id="productSpotlight">
-				<product-feat></product-feat>
-			</div>
-
-			<div id="twitter">
-				<a class="twitter-timeline" data-height="500" href="https://twitter.com/TheGrommet">Tweets by TheGrommet</a>
-				<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
-			</div>
-
-		</div>
-		<!--lower portion div end-->
-
-	</div>
-	<!--wrapper div end-->
+	<article ng-app="productApp">
+		<div ng-view></div>
+	</article>
 
 </body>
 
