@@ -12,6 +12,6 @@ angular.module('productApp').
                 when('/music/:musicId', {
                     template: '<music-detail></music-detail>'
                 }).
-                otherwise('/);
+                otherwise('/');
         }
     ]);
