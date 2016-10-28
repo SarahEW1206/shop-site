@@ -2,25 +2,19 @@
     {
         "title": "Blue Floral Scarf - $19.99",
         "name": "Blue Floral",
-        "imageUrl": [
-            "img/bluefloral.jpg"
-        ],
+        "imageUrl": "img/bluefloral.jpg",
         "buylink": "bluefloralscarf.html"
     },
     {
         "title": "Pink Squares Scarf - $19.99",
         "name": "Pink Squares",
-        "imageUrl": [
-            "img/pinksquares.jpg"
-        ],
+        "imageUrl": "img/pinksquares.jpg",
         "buylink": "pinksquaresscarf.html"
     },
     {
         "title": "Blue Plaid Scarf - $19.99",
         "name": "Blue Plaid",
-        "imageUrl": [
-            "img/plaid.jpg"
-        ],
+        "imageUrl": "img/plaid.jpg",
         "buylink": "blueplaidscarf.html"
     }
 ]
