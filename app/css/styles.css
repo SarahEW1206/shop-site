@@ -247,9 +247,6 @@ h1 {
 
 /*lower portion layout*/
 #lowerPortion {
-  display: flex;
-  flex-wrap: wrap;
-  flex: 1 1 auto;
   margin: 0;
   padding: 0;
   position: relative;
@@ -259,34 +256,14 @@ h1 {
 }
 
 #productSpotlight {
-  flex: 1;
   min-width: 250px;
   margin-top: .5em;
   background-color: #ffffff;
 }
 
-@media (min-width: 478px) {
+@media (min-width: 600px) {
   #productSpotlight {
-    min-width: 260px;
-  }
-}
-
-@media (min-width: 490px) {
-  #productSpotlight {
-    min-width: 250px;
-    margin-right: .25em;
-  }
-}
-
-@media (min-width: 560px) {
-  #productSpotlight {
-    margin: 0 0 0 .25em;
-  }
-}
-
-@media (min-width: 765px) {
-  #productSpotlight {
-    margin: 0 .25em;
+    display: flex;
   }
 }
 
@@ -302,13 +279,19 @@ h1 {
 }
 
 h4 {
-  margin-left: .8rem;
+  margin-left: .75rem;
 }
 
 #imageGallery {
   list-style: none;
   display: flex;
   margin-left: 1rem;
+}
+
+@media (min-width: 600px) {
+  #imageGallery {
+    width: 60%;
+  }
 }
 
 #imageGallery li {
@@ -337,11 +320,24 @@ h4 {
   position: relative;
 }
 
+@media (min-width: 600px) {
+  #content {
+    flex-grow: 1;
+  }
+}
+
 #content img {
   border: none;
   width: 80%;
   display: block;
   margin: auto;
+}
+
+@media (min-width: 600px) {
+  #content img {
+    margin: -5rem 0 0 2rem;
+    width: 100%;
+  }
 }
 
 #content a {

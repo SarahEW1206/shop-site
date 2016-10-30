@@ -28,28 +28,29 @@
 			perfect for the holidays.</p>
 	</div>-->
 
+	<h1 id="h1featuredProduct">
+		Featured Item</h1>
+	<h2 id="h2productName">Lightweight Scarf</h2>
+	<h4>Click to view larger.</h4>
 
 	<div id="productSpotlight">
 
-		<h1 id="h1featuredProduct">
-			Featured Item</h1>
-		<h2 id="h2productName">Lightweight Scarf</h2>
-		<h4>Click to view larger.</h3>
 
-			<ul id="imageGallery">
-				<li ng-repeat="product in $ctrl.featured">
-					<img ng-src="{{product.imageUrl}}" ng-click="$ctrl.setImage(product.imageUrl); $ctrl.setDesc(product.title)" />
-					<p> {{product.title}} </p>
-					<a href="#!products/{{product.buylink}} ">Buy now!</a>
-				</li>
-			</ul>
 
-			<div id="content">
+		<ul id="imageGallery">
+			<li ng-repeat="product in $ctrl.featured">
+				<img ng-src="{{product.imageUrl}}" ng-click="$ctrl.setImage(product.imageUrl); $ctrl.setDesc(product.title)" />
+				<p> {{product.title}} </p>
+				<a href="#!products/{{product.buylink}} ">Buy now!</a>
+			</li>
+		</ul>
 
-				<img ng-src="{{$ctrl.mainImageUrl}} " />
-				<p id="info"> {{$ctrl.description}} </p>
+		<div id="content">
 
-			</div>
+			<img ng-src="{{$ctrl.mainImageUrl}} " />
+			<p id="info"> {{$ctrl.description}} </p>
+
+		</div>
 
 	</div>
 
