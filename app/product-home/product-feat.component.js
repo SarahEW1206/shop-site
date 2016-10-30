@@ -5,7 +5,7 @@ angular.module('productApp').component('productFeat', {
             var self = this;
 
             self.setImage = function setImage(imageSrc) {
-                self.bigPic = imageSrc;
+                self.mainImageUrl = imageSrc;
             }
 
             $http.get('data/featured.json').then(function (response) {
