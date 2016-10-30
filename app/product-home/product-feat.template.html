@@ -1,18 +1,58 @@
-<div class="wrapper">
+<div class="slideshow-container">
 
-	<h1 id="h1featuredProduct">
-		Featured Item</h1>
-	<h2 id="h2productName">Lightweight Scarf</h2>
+	<div class="mySlides">
+		<img src="img/newmusic.svg" style="width:100%">
+	</div>
 
-	<ul id="imageGallery">
-		<li ng-repeat="product in $ctrl.featured">
-			<img ng-src="{{product.imageUrl}}" ng-click="$ctrl.setImage(product.imageUrl)" />
-			<p> {{product.title}} </p>
-			<a href="#!products/{{product.buylink}}">Buy now!</a>
-		</li>
-	</ul>
+	<div class="mySlides">
+		<img src="img/greatgifts.svg" style="width:100%">
+	</div>
 
-	<img ng-src="{{$ctrl.mainImageUrl}}" />
+	<div class="mySlides">
+		<img src="img/image3.svg" style="width:100%">
+	</div>
+
+</div>
+
+<div class="dotdiv" style="text-align:center">
+	<span class="dot"></span>
+	<span class="dot"></span>
+	<span class="dot"></span>
+</div>
+
+<div id="lowerPortion">
+
+	<!--<div id="latestNews">
+		<h1>Hello everyone!</h1>
+		<p>Check out our new releases and great gift items perfect for the holidays. Check out our new releases and great gift items
+			perfect for the holidays.</p>
+	</div>-->
+
+
+	<div id="productSpotlight">
+
+		<h1 id="h1featuredProduct">
+			Featured Item</h1>
+		<h2 id="h2productName">Lightweight Scarf</h2>
+		<h4>Click to view larger.</h3>
+
+			<ul id="imageGallery">
+				<li ng-repeat="product in $ctrl.featured">
+					<img ng-src="{{product.imageUrl}}" ng-click="$ctrl.setImage(product.imageUrl); $ctrl.setDesc(product.title)" />
+					<p> {{product.title}} </p>
+					<a href="#!products/{{product.buylink}} ">Buy now!</a>
+				</li>
+			</ul>
+
+			<div id="content">
+
+				<img ng-src="{{$ctrl.mainImageUrl}} " />
+				<p id="info"> {{$ctrl.description}} </p>
+
+			</div>
+
+	</div>
+
 
 
 </div>

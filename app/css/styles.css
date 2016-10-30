@@ -171,10 +171,6 @@ h1 {
   padding-left: .25em;
 }
 
-p {
-  padding-left: .5em;
-}
-
 /* styling for carousel */
 .mySlides {
   display: none;
@@ -262,25 +258,6 @@ p {
 */
 }
 
-#latestNews {
-  flex: 1;
-  min-width: 250px;
-  padding: 1em;
-  background-color: #42d56c;
-}
-
-@media (min-width: 560px) {
-  #latestNews {
-    width: calc(50%-.5em);
-  }
-}
-
-@media (min-width: 800px) {
-  #latestNews {
-    max-width: 300px;
-  }
-}
-
 #productSpotlight {
   flex: 1;
   min-width: 250px;
@@ -313,27 +290,19 @@ p {
   }
 }
 
-#twitter {
-  flex: 1;
-  margin-top: .5em;
-  background-color: #ffffff;
-}
-
-@media (min-width: 765px) {
-  #twitter {
-    margin-top: 0;
-  }
-}
-
 /*product spotlight styling*/
 #h1featuredProduct {
-  margin: .5em 0 0 .5em;
+  margin: .5em 0 0 1rem;
   padding: 0;
 }
 
 #h2productName {
   margin: 0 0 1em 1rem;
-  color: #1767ff;
+  font-size: 1.25rem;
+}
+
+h4 {
+  margin-left: .8rem;
 }
 
 #imageGallery {
@@ -344,15 +313,24 @@ p {
 
 #imageGallery li {
   width: 32%;
+  margin: .5em;
 }
 
 #imageGallery img {
-  width: 90%;
-  border: 1px solid #bbb;
+  width: 100%;
+  border: .5px solid #bbb;
 }
 
-#imageGallery .active img {
-  border-color: #666;
+#imageGallery p {
+  font-size: .75rem;
+  display: block;
+  text-align: center;
+}
+
+#imageGallery a {
+  font-size: .75rem;
+  display: block;
+  text-align: center;
 }
 
 #content {
@@ -366,21 +344,23 @@ p {
   margin: auto;
 }
 
-#content p {
-  position: absolute;
-  top: 2rem;
-  color: white;
-  padding: 1rem;
-  background-color: rgba(0, 0, 0, 0.6);
-  width: 100%;
-}
-
 #content a {
   position: relative;
   bottom: 3em;
   text-align: center;
   display: block;
   margin: auto;
+}
+
+#content #info {
+  position: absolute;
+  top: 4rem;
+  color: white;
+  padding: 2rem 1rem;
+  margin-left: 1rem;
+  background-color: rgba(0, 0, 0, 0.8);
+  border-radius: 0 5px 5px 0;
+  width: 40%;
 }
 
 .musicwrapper {
@@ -394,16 +374,6 @@ p {
   display: flex;
   flex-wrap: wrap;
   flex: 1 1 auto;
-}
-
-#h1featuredProduct {
-  margin: .5em 0 0 .5em;
-  padding: 0;
-}
-
-#h2productName {
-  margin: 0 0 1em 1rem;
-  color: #1767ff;
 }
 
 #allalbums {
