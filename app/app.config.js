@@ -7,11 +7,11 @@ angular.module('productApp').
                     template: '<product-feat></product-feat>'
                 }).
                 when('/music', {
-                    template: '<music-list></music-list>'
+                    template: '<product-music></product-music>'
                 }).
-                when('/music/:musicId', {
-                    template: '<music-detail></music-detail>'
-                }).
+                // when('/music/:musicId', {
+                //     template: '<music-detail></music-detail>'
+                // }).
                 otherwise('/');
         }
     ]);

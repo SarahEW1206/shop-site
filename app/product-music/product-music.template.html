@@ -1,0 +1,20 @@
+<h1 id="h1featuredProduct">
+	Featured Albums</h1>
+<h2 id="h2productName"></h2>
+
+<div id="productlayout">
+
+	<div id="selectedalbum">
+		<img ng-src="{{$ctrl.mainImageUrl}} " />
+		<p id="info"> {{$ctrl.description}}</p>
+	</div>
+</div>
+
+<div id="allalbums">
+	<ul id="musicGallery">
+		<li ng-repeat="album in $ctrl.albums">
+			<img src="{{ album.picture }}" ng-click="$ctrl.setImage(album.picture); $ctrl.setDesc(album.title)" />
+			<p> {{album.title}} </p>
+		</li>
+	</ul>
+</div>

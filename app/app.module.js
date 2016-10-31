@@ -1,6 +1,6 @@
 angular.module('productApp', [
     'ngRoute',
-    'productFeat'
-    // 'productList',
+    'productFeat',
+    'productMusic'
     // 'productDetail'
 ]);

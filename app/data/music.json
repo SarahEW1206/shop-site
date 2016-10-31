@@ -1,0 +1,72 @@
+[
+    {
+        "title": "Almost Here",
+        "name": "The Academy Is...",
+        "picture": "img/albumacademy.jpg",
+        "price": "$14.99",
+        "buylink": ""
+    },
+    {
+        "title": "One",
+        "name": "The Beatles",
+        "picture": "img/albumbeatles.jpg",
+        "price": "$14.99",
+        "buylink": ""
+    },
+    {
+        "title": "London Calling",
+        "name": "The Clash",
+        "picture": "img/albumclash.jpg",
+        "price": "$14.99",
+        "buylink": ""
+    },
+    {
+        "title": "Infinity on High",
+        "name": "Fallout Boy",
+        "picture": "img/albumfalloutboy.jpg",
+        "price": "$14.99",
+        "buylink": ""
+    },
+    {
+        "title": "In Your Honor",
+        "name": "Foo Fighters",
+        "picture": "img/albumfoo.jpg",
+        "price": "$14.99",
+        "buylink": ""
+    },
+    {
+        "title": "St. Elsewhere",
+        "name": "Gnarls Barkley",
+        "picture": "img/albumgnarls.jpg",
+        "price": "$14.99",
+        "buylink": ""
+    },
+    {
+        "title": "American Idiot",
+        "name": "Green Day",
+        "picture": "img/albumgreenday.jpg",
+        "price": "$14.99",
+        "buylink": ""
+    },
+    {
+        "title": "Light Grenades",
+        "name": "Incubus",
+        "picture": "img/albumincubus.jpg",
+        "price": "$14.99",
+        "buylink": ""
+    },
+    {
+        "title": "Under the Iron Sea",
+        "name": "Keane",
+        "picture": "img/albumkeane.jpg",
+        "price": "$14.99",
+        "buylink": ""
+    },
+    {
+        "title": "Room for Squares",
+        "name": "John Mayer",
+        "picture": "img/albummayer.jpg",
+        "price": "$14.99",
+        "buylink": ""
+    }
+]
