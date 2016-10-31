@@ -45,7 +45,6 @@ header {
 
 .wrapper {
   max-width: 90%;
-  height: 120%;
   margin: 0 auto;
   position: relative;
   background-color: white;
@@ -122,7 +121,6 @@ nav ul li {
   align-items: center;
   flex-grow: 1;
   padding: .4em;
-  /*margin: .05em*/
   background-color: rgba(0, 0, 0, 0.9);
   border-radius: 0;
   width: 6em;
@@ -222,22 +220,6 @@ h1 {
   background-color: #717171;
 }
 
-/* Fading animation */
-/*.fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
-  animation-name: fade;
-  animation-duration: 1.5s;
-}*/
-/*@-webkit-keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
-}
-
-@keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
-}*/
 /* On smaller screens, decrease text size */
 @media only screen and (max-width: 300px) {
   .text {
@@ -251,8 +233,6 @@ h1 {
   padding: 0;
   position: relative;
   top: -.8em;
-  /*	background-color: #ffffff;
-*/
 }
 
 #productSpotlight {
@@ -267,7 +247,6 @@ h1 {
   }
 }
 
-/*product spotlight styling*/
 #h1featuredProduct {
   margin: .5em 0 0 1rem;
   padding: 0;
@@ -279,7 +258,7 @@ h1 {
 }
 
 h4 {
-  margin-left: .75rem;
+  margin-left: 1rem;
 }
 
 #imageGallery {
@@ -359,13 +338,6 @@ h4 {
   width: 40%;
 }
 
-.musicwrapper {
-  max-width: 90%;
-  margin: 0 auto;
-  position: relative;
-  top: -1em;
-}
-
 #productlayout {
   display: flex;
   flex-wrap: wrap;
@@ -375,10 +347,12 @@ h4 {
 #allalbums {
   flex: 1;
   min-width: 100%;
+  margin-top: 2rem;
 }
 
 @media (min-width: 650px) {
   #allalbums {
+    margin-top: 0;
     min-width: 50%;
   }
 }
@@ -396,11 +370,16 @@ h4 {
 
 #musicGallery img {
   width: 90%;
-  border: 1px solid #bbb;
 }
 
 #musicGallery .active img {
   border: 2px solid #666;
+}
+
+#musicGallery p {
+  font-size: .8rem;
+  margin-bottom: 1rem;
+  width: 90%;
 }
 
 #selectedalbum {
@@ -415,14 +394,36 @@ h4 {
   margin: auto;
 }
 
-#selectedalbum p {
-  color: white;
+#selectedalbum #albuminfobar {
+  color: #333;
   padding: .5rem;
   background-color: #42d56c;
   width: 80%;
   text-align: center;
   display: block;
   margin: auto;
+  font-weight: bold;
+}
+
+#selectedalbum #buy {
+  width: 50%;
+  text-align: center;
+  display: block;
+  margin: auto;
+  margin-top: .25rem;
+  background-color: #333;
+  border-radius: 5px;
+  padding: .25rem;
+  color: white;
+  text-decoration: none;
+}
+
+#selectedalbum #release {
+  width: 50%;
+  text-align: center;
+  display: block;
+  margin: auto;
+  margin-top: .25rem;
 }
 
 #buyline {

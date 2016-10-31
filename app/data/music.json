@@ -4,69 +4,79 @@
         "name": "The Academy Is...",
         "picture": "img/albumacademy.jpg",
         "price": "$14.99",
-        "buylink": ""
+        "buylink": "#!/music",
+        "releasedate": "2005"
     },
     {
         "title": "One",
         "name": "The Beatles",
         "picture": "img/albumbeatles.jpg",
         "price": "$14.99",
-        "buylink": ""
+        "buylink": "#!/music",
+        "releasedate": "2000"
     },
     {
         "title": "London Calling",
         "name": "The Clash",
         "picture": "img/albumclash.jpg",
         "price": "$14.99",
-        "buylink": ""
+        "buylink": "#!/music",
+        "releasedate": "1979"
     },
     {
         "title": "Infinity on High",
         "name": "Fallout Boy",
         "picture": "img/albumfalloutboy.jpg",
         "price": "$14.99",
-        "buylink": ""
+        "buylink": "#!/music",
+        "releasedate": "2007"
     },
     {
         "title": "In Your Honor",
         "name": "Foo Fighters",
         "picture": "img/albumfoo.jpg",
         "price": "$14.99",
-        "buylink": ""
+        "buylink": "#!/music",
+        "releasedate": "2005"
     },
     {
         "title": "St. Elsewhere",
         "name": "Gnarls Barkley",
         "picture": "img/albumgnarls.jpg",
         "price": "$14.99",
-        "buylink": ""
+        "buylink": "#!/music",
+        "releasedate": "2006"
     },
     {
         "title": "American Idiot",
         "name": "Green Day",
         "picture": "img/albumgreenday.jpg",
         "price": "$14.99",
-        "buylink": ""
+        "buylink": "#!/music",
+        "releasedate": "2004"
     },
     {
         "title": "Light Grenades",
         "name": "Incubus",
         "picture": "img/albumincubus.jpg",
         "price": "$14.99",
-        "buylink": ""
+        "buylink": "#!/music",
+        "releasedate": "2006"
     },
     {
         "title": "Under the Iron Sea",
         "name": "Keane",
         "picture": "img/albumkeane.jpg",
         "price": "$14.99",
-        "buylink": ""
+        "buylink": "#!/music",
+        "releasedate": "2006"
     },
     {
         "title": "Room for Squares",
         "name": "John Mayer",
         "picture": "img/albummayer.jpg",
         "price": "$14.99",
-        "buylink": ""
+        "buylink": "#!/music",
+        "releasedate": "2001"
     }
 ]

@@ -1,9 +1,4 @@
-.musicwrapper {
-	max-width: $width;
-	margin: 0 auto;
-	position: relative;
-	top: -1em;
-}
+
 
 #productlayout {
    	display: flex;
@@ -11,21 +6,13 @@
 	flex: 1 1 auto;    
 }
 
-// #h1featuredProduct {
-// 	margin: .5em 0 0 .5em;
-// 	padding: 0;
-// }
-
-// #h2productName {
-// 	margin: 0 0 1em 1rem;
-// 	color: rgba(23, 103, 255, 1);
-// }
-
 #allalbums {
     flex: 1;
     min-width: 100%;
+	margin-top: 2rem;
 
 	@media (min-width: 650px) {
+		margin-top: 0;
 		min-width: 50%;
 	}
 }
@@ -42,11 +29,17 @@
 
 	img {
 	width: 90%;
-	border: 1px solid #bbb;
+	
 	}
 
 	.active img {
 	border: 2px solid #666;
+	}
+
+	p {
+		font-size: .8rem;
+		margin-bottom: 1rem;
+		width: 90%;
 	}
 }
 
@@ -60,14 +53,35 @@
 		display: block;
 		margin: auto;
 	}
-	p {
-		color: white;
+	#albuminfobar {
+		color: #333;
 		padding: .5rem;
 		background-color: rgba(66, 213, 108, 1);
 		width: 80%;
         text-align: center;
 		display: block;
 		margin: auto;
+		font-weight: bold;
+	}
+	#buy {
+		width: 50%;
+		text-align: center;
+		display: block;
+		margin: auto;
+		margin-top: .25rem;
+		background-color: #333;
+		border-radius: 5px;
+		padding: .25rem;
+		color: white;
+		text-decoration: none;
+	}
+
+	#release {
+		width: 50%;
+		text-align: center;
+		display: block;
+		margin: auto;
+		margin-top: .25rem;
 	}
 }
 

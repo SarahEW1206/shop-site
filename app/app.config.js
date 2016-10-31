@@ -9,9 +9,6 @@ angular.module('productApp').
                 when('/music', {
                     template: '<product-music></product-music>'
                 }).
-                // when('/music/:musicId', {
-                //     template: '<music-detail></music-detail>'
-                // }).
                 otherwise('/');
         }
     ]);

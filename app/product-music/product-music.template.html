@@ -6,15 +6,25 @@
 
 	<div id="selectedalbum">
 		<img ng-src="{{$ctrl.mainImageUrl}} " />
-		<p id="info"> {{$ctrl.description}}</p>
-	</div>
-</div>
+		<p id="albuminfobar"> {{$ctrl.artist}} - {{$ctrl.description}}</p>
 
-<div id="allalbums">
-	<ul id="musicGallery">
-		<li ng-repeat="album in $ctrl.albums">
-			<img src="{{ album.picture }}" ng-click="$ctrl.setImage(album.picture); $ctrl.setDesc(album.title)" />
-			<p> {{album.title}} </p>
-		</li>
-	</ul>
+		<a id="buy" href="{{ $ctrl.link }}">
+			<p>Buy now! {{ $ctrl.amount }}</p>
+		</a>
+
+		<p id="release"> Released: {{ $ctrl.release}} </p>
+
+	</div>
+
+	<div id="allalbums">
+		<h4>Click thumbnails for more info.</h4>
+		<ul id="musicGallery">
+			<li ng-repeat="album in $ctrl.albums">
+				<img ng-src="{{ album.picture }}" ng-click="$ctrl.setImage(album.picture); $ctrl.setDesc(album.title); $ctrl.setPrice(album.price); $ctrl.setArtist(album.name); $ctrl.setYear(album.releasedate)"
+				/>
+				<p> {{album.title}} </p>
+			</li>
+		</ul>
+	</div>
+
 </div>

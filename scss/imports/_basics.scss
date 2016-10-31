@@ -15,7 +15,6 @@ html {
 body {
 	height: 100%;
   	overflow: auto;
-	// background: url("../img/background.svg");
 	background-attachment: fixed;
 }
 
@@ -48,7 +47,6 @@ header {
 
 .wrapper {
 	max-width: $width;
-	height: 120%;
 	margin: 0 auto;
 	position: relative;
 	background-color: rgba(255, 255, 255, 1);
@@ -123,7 +121,6 @@ nav ul li {
 	align-items: center;
 	flex-grow: 1;
 	padding: .4em;
-	/*margin: .05em*/;
 	background-color: rgba(0,0,0,.90);
 	border-radius: 0;
 	width: 6em;
@@ -155,17 +152,10 @@ nav ul li {
 
 }
 
-
-
-
 h1 {
 	margin: 0;
 	font-family: 'Poiret One', cursive;
 	padding-left: .25em;
-}
-
-p {
-	// padding-left: .5em;
 }
 
 /* styling for carousel */
@@ -216,23 +206,6 @@ p {
   background-color: #717171;
 }
 
-/* Fading animation */
-/*.fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
-  animation-name: fade;
-  animation-duration: 1.5s;
-}*/
-
-/*@-webkit-keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
-}
-
-@keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
-}*/
 
 /* On smaller screens, decrease text size */
 @media only screen and (max-width: 300px) {
@@ -247,24 +220,8 @@ p {
 	padding: 0;
 	position: relative;
 	top: -.8em;
-/*	background-color: #ffffff;
-*/
+
 }
-
-// #latestNews {
-// 	flex: 1;
-// 	min-width: 250px;
-// 	padding: 1em;
-// 	background-color: rgba(66, 213, 108, 1);
-
-// 		@media (min-width: 560px) {
-// 		width: calc(50%-.5em);
-// 	}
-
-// 	@media (min-width: 800px) {
-// 		max-width: 300px;
-// 	}
-// }
 
 #productSpotlight {
 	min-width: 250px;
@@ -278,19 +235,6 @@ p {
 
 }
 
-// #twitter {
-// 	flex: 1;
-// 	margin-top: .5em;
-// 	background-color: #ffffff;
-
-// 		@media (min-width: 765px) {
-// 		margin-top: 0;
-// 	}
-
-// }
-
-/*product spotlight styling*/
-
 #h1featuredProduct {
 	margin: .5em 0 0 1rem;
 	padding: 0;
@@ -303,7 +247,7 @@ p {
 }
 
 h4 {
-	margin-left: .75rem;
+	margin-left: 1rem;
 }
 
 #imageGallery {
@@ -338,6 +282,8 @@ h4 {
 		text-align: center;
 	}
 }
+
+
 
 #content {
 	position: relative;
